@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 1000px;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(241, 250, 238); */
+  background: #111;
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.inputField {
+  width: 170px;
+  padding-left: 5px;
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.inputDiv {
+  clear: both;
+}
+
+.board {
+  text-align: left;
+  padding-left: 5px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  width: 170px;
+  height: 19px;
+  font-size: 11px;
+  border-radius: 10%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.counterDiv {
+  width: 100px;
+  display: inline-block;
+  color: white;
+}
+
+#container {
+  position: relative;
+}
+
+#checkboxes {
+  flex-direction: row;
+  z-index: 2;
+}
+
+#inputboxes {
+  margin-top: -63px;
+  z-index: 1;
+}
+
+.LabelTag {
+  background-color: red;
+}
+.InputTag {
+  color: chartreuse;
+}
+
+.Active {
+  display: table;
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  background: rgb(69, 123, 157);
+}
+.Completed {
+  background: rgb(230, 57, 70);
+}
+
+.taskDiv {
+  display: table;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: black 15px;
+  table-layout: fixed;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  overflow: hidden;
+
+  flex-shrink: 0;
+  margin: 20px;
+
+  border: calc(8px + 0.2vw) solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  border-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+  border-image-slice: 1;
+}
+
+.inputStyle {
+  font-size: 11px;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  left: -129px;
+  top: -18px;
+  width: 130px;
+  height: 20px;
+  border-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+  border-image-slice: 1;
+  border-width: 3px;
+  background: white;
+  color: rgb(29, 53, 87);
+}
+
+.LabelStyle {
+  display: table-cell;
+  text-align: center;
+  margin: auto;
+  width: 130px;
+  height: 20px;
+  font-size: 10px;
+  color: black;
+}
+
+.btnStyle {
+  border: 1px;
+  margin: auto;
+  color: black;
+  background: none;
+  display: table-cell;
+  text-align: center;
+  font-size: 11px;
+}
+
+.checkboxStyle {
+  display: table-cell;
+  text-align: center;
+  border: lightgray;
+  box-shadow: none;
+  background: transparent;
+  margin-top: 5px;
+  /* margin: auto; */
+  left: -92px;
+}
+
+.ModeStyle {
+  position: absolute;
+}
